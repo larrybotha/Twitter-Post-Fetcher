@@ -256,7 +256,7 @@
             rt: rts[n],
             tid: tids[n],
             permalinkURL: (permalinksURL[n] === undefined) ?
-                '' : permalinksURL[n].href 
+                '' : permalinksURL[n].href
           });
           n++;
         }
@@ -364,17 +364,3 @@
   window.twitterFetcher = twitterFetcher;
   return twitterFetcher;
 }));
-
-
-
-var config8 = {
-  "id": '345170787868762112',
-  "dataOnly": true,
-  "customCallback": populateTpl
-};
-
-twitterFetcher.fetch(config8);
-
-function populateTpl(tweets){
-  console.log(tweets);
-}
